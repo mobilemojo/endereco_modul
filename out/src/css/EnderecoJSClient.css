@@ -1,0 +1,202 @@
+[hidden] { display: none; }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+div.awesomplete {
+    position: relative;
+}
+
+div.awesomplete > input {
+    display: block;
+}
+
+div.awesomplete .awesomplete-dropdown {
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    top: 100%;
+    width: 100%;
+    list-style: none;
+    height: auto;
+}
+
+div.awesomplete .standard-dropdown {
+    box-sizing: border-box;
+    border-radius: .3em;
+    margin: .2em 0 0;
+    background: hsla(0,0%,100%,.9);
+    background: linear-gradient(to bottom right, white, hsla(0,0%,100%,.8));
+    border: 1px solid rgba(0,0,0,.3);
+    box-shadow: .05em .2em .6em rgba(0,0,0,.2);
+    text-shadow: none;
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+div.awesomplete .awesomplete-dropdown[hidden],
+div.awesomplete .awesomplete-dropdown:empty {
+    display: none;
+}
+
+@supports (transform: scale(0)) {
+    div.awesomplete .awesomplete-dropdown {
+        transition: .3s cubic-bezier(.4,.2,.5,1.4);
+        transform-origin: 1.43em -.43em;
+    }
+
+    div.awesomplete .awesomplete-dropdown[hidden],
+    div.awesomplete .awesomplete-dropdown:empty {
+        opacity: 0;
+        transform: scale(0);
+        display: block;
+        transition-timing-function: ease;
+    }
+}
+
+/* Pointer */
+div.awesomplete .awesomplete-dropdown:before {
+    content: "";
+    z-index: 50;
+    position: absolute;
+    top: -.43em;
+    left: 1em;
+    width: 0; height: 0;
+    padding: .4em;
+    background: white;
+    border: inherit;
+    border-right: 0;
+    border-bottom: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+div.awesomplete .awesomplete-dropdown > li {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+div.awesomplete .awesomplete-dropdown > li:hover {
+    background: hsl(200, 40%, 80%);
+    color: black;
+}
+
+div.awesomplete .awesomplete-dropdown > li[aria-selected="true"] {
+    background: hsl(212, 61%, 88%);
+    color: black;
+}
+
+div.awesomplete .awesomplete-dropdown > li[aria-selected="true"] mark {
+    color: white;
+}
+
+
+div.awesomplete mark {
+    background: hsl(65, 100%, 50%);
+}
+
+div.awesomplete li:hover mark {
+    background: hsl(68, 100%, 41%);
+}
+
+div.awesomplete li[aria-selected="true"] mark {
+    background: hsl(86, 100%, 21%);
+    color: inherit;
+}
+
+#enderecoAddressCheckModal{
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#enderecoAddressCheckModal.in{
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+#enderecoAddressCheckModal .modal-content{
+    border-bottom-right-radius: 5px;
+}
+
+#enderecoAddressCheckModal .headline{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 40px 15px 15px;
+    background-color: rgb(218, 218, 218);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 2px solid rgb(129, 129, 129);
+}
+
+#enderecoAddressCheckModal .description-text{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#enderecoAddressCheckModal button.close {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+    z-index: 5000;
+    cursor: pointer;
+    background: transparent;
+}
+
+#enderecoAddressCheckModal button.close:after{
+    content: '\2716'
+}
+
+#enderecoAddressCheckModal .current, #enderecoAddressCheckModal .corrected {
+    margin-bottom: 15px;
+}
+
+#enderecoAddressCheckModal .could-not-find-corrections{
+    display: none;
+}
+
+#enderecoAddressCheckModal.no-corrections-found .could-not-find-corrections{
+    display: block;
+}
+
+#enderecoAddressCheckModal button.correct-address {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: black;
+    padding: 5px 10px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#enderecoAddressCheckModal label{
+    padding-left: 20px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+#enderecoAddressCheckModal label input{
+    position: absolute;
+    left: 0;
+    top: -2px;
+}

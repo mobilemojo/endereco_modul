@@ -1,0 +1,26 @@
+.gender-mismatch [name="invadr[oxuser__oxsal]"] {
+    color: #ff5a5d;
+    background-color: #fffcaa;
+}
+
+.gender-mismatch [name="deladr[oxaddress__oxsal]"] {
+    color: #ff5a5d;
+    background-color: #fffcaa;
+}
+
+.awesomplete {
+    position: relative;
+    display: inline-block;
+}
+
+[name="invadr[oxuser__oxzip]"] + ul{
+    width: 200% !important;
+}
+
+[name="deladr[oxaddress__oxzip]"] + ul{
+    width: 200% !important;
+}
+
+#enderecoAddressCheckModal {
+    display: none;
+}

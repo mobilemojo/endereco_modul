@@ -1,0 +1,25 @@
+<?php
+
+abstract class EnderecoAddressCheckStatusEnum
+{
+    const ADDRESS_CORRECT = 'A1000';
+    const ADDRESS_NORMED = 'A1100';
+    const POSTCODE_NORMED = 'A1130';
+    const CITY_NORMED = 'A1140';
+    const STREET_NORMED = 'A1160';
+    const HOUSE_NR_NORMED = 'A1180';
+    const ADDRESS_OUTDATED = 'A1200';
+    const POSTCODE_OUTDATED = 'A1230';
+    const CITY_OUTDATED = 'A1240';
+    const STREET_OUTDATED = 'A1260';
+    const HOUSE_NR_OUTDATED = 'A1280';
+    const ADDRESS_AUTOMATICALLY_CORRECTED = 'A1300';
+    const ADDRESS_IS_CORRECTABLE = 'A2000';
+    const ADDRESS_HAS_BEEN_CORRECTED = 'A2100';
+    const ADDRESS_IS_TOO_AMBIGUOUS = 'A3000';
+    const ADDRESS_COULD_NOT_BE_FOUND = 'A4000';
+    const POSTCODE_COULD_NOT_BE_FOUND = 'A4030';
+    const CITY_COULD_NOT_BE_FOUND = 'A4040';
+    const STREET_COULD_NOT_BE_FOUND = 'A4060';
+    const HOUSE_NR_COULD_NOT_BE_FOUND = 'A4070';
+}

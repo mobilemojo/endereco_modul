@@ -1,0 +1,30 @@
+/*.gender-mismatch .bootstrap-select button {*/
+/*color: #ff5a5d;*/
+/*background-color: #fffcaa;*/
+/*}*/
+
+[name="invadr[oxuser__oxzip]"] + ul{
+    width: 200% !important;
+}
+
+[name="deladr[oxaddress__oxzip]"] + ul{
+    width: 200% !important;
+}
+
+.modal-backdrop{
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 1010 !important;
+}
+
+.gender-mismatch .bootstrap-select button {
+    border: 1px solid yellow;
+    background-color: rgba(255, 255, 0, 0.15) !important;
+}
+
+#enderecoAddressCheckModal {
+    display: none;
+}

@@ -1,0 +1,31 @@
+{
+    "version": "1.0.0",
+    "name":        "EnderecoAMS",
+    "description": "Beschreibung",
+    "type":        "oxideshop-module",
+    "keywords":    ["oxid", "modules", "eShop", "endereco"],
+    "homepage":    "https://www.endereco.de",
+    "license":     [
+        "GPL-3.0",
+        "proprietary"
+    ],
+    "authors":     [
+        {
+            "name":  "mojo",
+            "email": "info@mobilemojo.de"
+        }
+    ],
+    "extra":       {
+        "oxideshop": {
+            "target-directory": "mojo/enderecoAMS"
+        }
+    },
+    "require":     {
+        "php": ">=5.6"
+    },
+    "autoload":    {
+        "psr-4": {
+            "mojo\\enderecoAMS\\": "../../../../source/modules/mojo/enderecoAMS"
+        }
+    }
+}
