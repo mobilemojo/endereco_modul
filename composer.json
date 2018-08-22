@@ -25,7 +25,7 @@
     },
     "autoload":    {
         "psr-4": {
-            "mojo\\enderecoAMS\\": "../../../../source/modules/mojo/enderecoAMS"
+            "mojo\\enderecoAMS\\": "../../../../source/modules/mojo/enderecoAMS" 
         }
     }
 }
