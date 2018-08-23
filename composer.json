@@ -28,5 +28,7 @@
         "psr-4": {
             "mojo\\enderecoAMS\\": "../../../../source/modules/mojo/enderecoAMS" 
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
